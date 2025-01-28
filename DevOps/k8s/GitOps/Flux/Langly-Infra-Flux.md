@@ -204,6 +204,7 @@ https://cloud.google.com/kubernetes-engine/docs/tutorials/stateful-workloads/clo
 ![alt text](attachments/statefulset.png)
 
 https://cloud.google.com/kubernetes-engine/docs/tutorials/stateful-workloads/postgresql
+https://habr.com/ru/companies/first/articles/662784/
 
 
 Как пример:
