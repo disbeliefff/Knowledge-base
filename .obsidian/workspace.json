@@ -1,0 +1,184 @@
+{
+  "main": {
+    "id": "3804ea582e972d09",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9a328a4d2ec24a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c10ddfd037cc2910",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/Docker/Templates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Templates"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "afa4315574b4ef1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "ddf454cb79dd091f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9c30c2b7222ceeb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0379f9db2165035b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4927fb616c388069",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d8ae60ea6ff6852c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ee3266b749c761d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b997d41a27f76a82",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DevOps/Docker/Templates.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Templates"
+            }
+          },
+          {
+            "id": "5abee51b79523e0d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DevOps/Docker/Templates.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Templates"
+            }
+          },
+          {
+            "id": "7cbc7f0a82ae492b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "89c7beb151d2e500",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DevOps/Docker/Templates.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Templates"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c10ddfd037cc2910",
+  "lastOpenFiles": [
+    "DevOps/Docker/Core",
+    "DevOps/k8s/GitOps/Flux/Flux.md",
+    "DevOps/k8s/Core",
+    "DevOps/k8s/Helm",
+    "DevOps/k8s/GitOps/Flux/attachments/Pasted image 20250128111010.png",
+    "DevOps/k8s/GitOps/Flux/attachments/Pasted image 20250128110931.png",
+    "DevOps/k8s/GitOps/Flux/attachments/Pasted image 20250128110851.png",
+    "DevOps/k8s/GitOps/Flux/attachments",
+    "DevOps/Docker/Templates.md",
+    "DevOps/Docker",
+    "DevOps/k8s/GitOps/Flux",
+    "DevOps/k8s/GitOps",
+    "DevOps/k8s",
+    "Golang",
+    "DevOps",
+    "Welcome.md"
+  ]
+}
