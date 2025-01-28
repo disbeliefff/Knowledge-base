@@ -2,20 +2,18 @@
 # Flux working schema 
 
 
-![[Pasted image 20250128110851.png]]
+![alt text](<attachments/Pasted image 20250128110851.png>)
 
-
-  
 
 # Flux Helm Operator (in the flux stack, responsible for installing, updating and deleting charts)
 
-![[Pasted image 20250128110931.png]]
+![alt text](<attachments/Pasted image 20250128110931.png>)
 
 По факту просто бинарный файл на go, который детектит обновление в файле helm release и на основании этого устанавливает/обновляет/удаляет на основании изменений каких-либо (helm release это просто описание того, какой чарт и откуда устанавливается/изменяется/удаляется)
 
 # Repository Example
 
-
+```
 .
 ├── apps
 │   ├── base                              # Базовые определения
@@ -60,6 +58,8 @@
             ├── kustomization.yaml       # Подключает gke-prod/stable
             └── canary
                 └── kustomization.yaml   # Подключает gke-prod/canary
+````
+
 # Idea
 
 Инфраструктура следует трехуровневой архитектуре для кастомизации приложений:
@@ -166,9 +166,10 @@
 
 ## Прогрессия сред
 
+```
 Разработка → Предпродакшн → Продакшн канарейка → Продакшн стабильный
 (gcp-dev)    (gcp-preprod)    (gcp-prod/canary)   (gcp-prod/stable)
-
+```
 
 
 
