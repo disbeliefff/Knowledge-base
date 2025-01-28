@@ -192,14 +192,16 @@ https://fluxcd.io/flux/use-cases/helm/
 
 ![alt text](attachments/image.png)
 
-Будем использовать cloud-native pg для деплоя pg в google cloud
+Мы можем использовать cloud native pg для деплоя postgres в google cloud 
 
 Resources:
 
 https://cloud.google.com/kubernetes-engine/docs/tutorials/stateful-workloads/cloudnativepg
 
 
+Либо альтернативный вариант:
 
+https://cloud.google.com/kubernetes-engine/docs/tutorials/stateful-workloads/postgresql
 
 
 
