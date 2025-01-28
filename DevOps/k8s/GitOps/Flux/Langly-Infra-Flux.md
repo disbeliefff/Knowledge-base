@@ -1,13 +1,11 @@
 
 # Flux working schema.
 
-
-![alt text](<attachments/Pasted image 20250128110851.png>)  
-
+![alt text](attachments/schema.png)
 
 # Flux Helm Operator (in the flux stack, responsible for installing, updating and deleting charts)
 
-![alt text](<attachments/Pasted image 20250128110931.png>)
+![alt text](attachments/helm-operator.png)
 
 По факту просто бинарный файл на go, который детектит обновление в файле helm release и на основании этого устанавливает/обновляет/удаляет на основании изменений каких-либо (helm release это просто описание того, какой чарт и откуда устанавливается/изменяется/удаляется)
 
@@ -185,9 +183,6 @@ https://www.youtube.com/watch?v=T4fkWIGahiQ&t=1271s
 https://fluxcd.io/flux/use-cases/helm/
 
 
-
-
-
 # Postgres Deployment 
 
 ![alt text](attachments/pgcloud.png)
@@ -199,7 +194,8 @@ Resources:
 https://cloud.google.com/kubernetes-engine/docs/tutorials/stateful-workloads/cloudnativepg
 
 
-Либо альтернативный вариант развертывать как StatefulSet:
+Либо альтернативный вариант развертывать как StatefulSet (я думаю более предпочтительный для нас в связи с более гибкой настройкой):
+
 
 ![alt text](attachments/statefulset.png)
 
