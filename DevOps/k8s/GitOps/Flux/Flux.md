@@ -13,54 +13,6 @@
 
 По факту просто бинарный файл на go, который детектит обновление в файле helm release и на основании этого устанавливает/обновляет/удаляет на основании изменений каких-либо (helm release это просто описание того, какой чарт и откуда устанавливается/изменяется/удаляется)
 
-# Repository Example
-
-````
-.
-├── apps
-│   ├── base                              # Базовые определения
-│   │   ├── app                           # Ваше приложение
-│   │   │   ├── deployment.yaml
-│   │   │   ├── service.yaml
-│   │   │   ├── hpa.yaml
-│   │   │   └── kustomization.yaml
-│   │   ├── monitoring                    # Мониторинг
-│   │   │   ├── prometheus
-│   │   │   └── grafana
-│   │   └── flux-monitoring              # Мониторинг Flux
-│   │
-│   └── bundles                          # Бандлы для разных сред
-│       ├── gke-dev                      # Разработка
-│       │   ├── kustomization.yaml       # Включает base + dev настройки
-│       │   └── values.yaml
-│       ├── gke-preprod                  # Предпродакшен
-│       │   ├── kustomization.yaml
-│       │   └── values.yaml
-│       └── gke-prod                     # Продакшен
-│           ├── stable                   # Стабильная версия
-│           │   ├── kustomization.yaml
-│           │   └── values.yaml
-│           └── canary                   # Канареечная версия
-│               ├── kustomization.yaml
-│               └── values.yaml
-│
-└── clusters
-    ├── gke-dev                          # Dev кластер
-    │   ├── flux-system
-    │   │   └── gotk-components.yaml
-    │   └── apps
-    │       └── kustomization.yaml       # Подключает gke-dev bundle
-    ├── gke-preprod                      # Preprod кластер
-    │   ├── flux-system
-    │   └── apps
-    │       └── kustomization.yaml       # Подключает gke-preprod bundle
-    └── gke-prod                         # Prod кластер
-        ├── flux-system
-        └── apps
-            ├── kustomization.yaml       # Подключает gke-prod/stable
-            └── canary
-                └── kustomization.yaml   # Подключает gke-prod/canary
-````
 # Idea
 
 Инфраструктура следует трехуровневой архитектуре для кастомизации приложений:
