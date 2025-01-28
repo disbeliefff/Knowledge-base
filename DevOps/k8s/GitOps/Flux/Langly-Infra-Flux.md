@@ -2,7 +2,7 @@
 # Flux working schema.
 
 
-![alt text](<attachments/Pasted image 20250128110851.png>)
+![alt text](<attachments/Pasted image 20250128110851.png>)  
 
 
 # Flux Helm Operator (in the flux stack, responsible for installing, updating and deleting charts)
@@ -84,7 +84,7 @@
 ```plaintext
 .
 ├── apps/
-│   ├── base/                    # Уровень 1: Базовые определения
+│   ├── base/                   # Уровень 1: Базовые определения
 │   │   ├── application/        # Базовые конфиги приложения
 │   │   │   ├── deployment.yaml
 │   │   │   ├── service.yaml
@@ -171,11 +171,6 @@
 (gcp-dev)    (gcp-preprod)    (gcp-prod/canary)   (gcp-prod/stable)
 ```
 
-
-
-
-
-
 Example:
 
 https://github.com/brainfair/awesome-flux-infra?tab=readme-ov-file
@@ -188,3 +183,23 @@ https://www.youtube.com/watch?v=d-H2K4I7-jk
 https://www.youtube.com/watch?v=T4fkWIGahiQ&t=1271s
 
 https://fluxcd.io/flux/use-cases/helm/
+
+
+
+
+
+# Postgres Deployment 
+
+![alt text](attachments/image.png)
+
+Будем использовать cloud-native pg для деплоя pg в google cloud
+
+Resources:
+
+https://cloud.google.com/kubernetes-engine/docs/tutorials/stateful-workloads/cloudnativepg
+
+
+
+
+
+
