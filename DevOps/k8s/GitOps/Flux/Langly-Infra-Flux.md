@@ -190,7 +190,7 @@ https://fluxcd.io/flux/use-cases/helm/
 
 # Postgres Deployment 
 
-![alt text](attachments/image.png)
+![alt text](attachments/pgcloud.png)
 
 Мы можем использовать cloud native pg для деплоя postgres в google cloud 
 
@@ -199,9 +199,68 @@ Resources:
 https://cloud.google.com/kubernetes-engine/docs/tutorials/stateful-workloads/cloudnativepg
 
 
-Либо альтернативный вариант:
+Либо альтернативный вариант развертывать как StatefulSet:
+
+![alt text](attachments/statefulset.png)
 
 https://cloud.google.com/kubernetes-engine/docs/tutorials/stateful-workloads/postgresql
+
+
+Как пример:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  labels:
+    app: postgres
+spec:
+  ports:
+    - port: 5432
+  clusterIP: None
+  selector:
+    app: postgres
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+spec:
+  selector:
+    matchLabels:
+      app: postgres
+  serviceName: "postgres"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:15
+        ports:
+        - containerPort: 5432
+        env:
+        - name: POSTGRES_DB
+          value: "mydb"
+        - name: POSTGRES_USER
+          value: "user"
+        - name: POSTGRES_PASSWORD
+          value: "password"
+        volumeMounts:
+        - name: postgres-data
+          mountPath: /var/lib/postgresql/data
+  volumeClaimTemplates:
+  - metadata:
+      name: postgres-data
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 10Gi
+```
 
 
 
