@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Docker/Templates.md",
+                "file": "DevOps/k8s/GitOps/Flux/Flux Langly.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Templates"
+              "title": "Flux Langly"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Docker/Templates.md",
+                "file": "DevOps/k8s/GitOps/Flux/Flux Langly.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Templates"
+              "title": "Backlinks for Flux Langly"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Docker/Templates.md",
+                "file": "DevOps/k8s/GitOps/Flux/Flux Langly.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Templates"
+              "title": "Outgoing links from Flux Langly"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Docker/Templates.md"
+                "file": "DevOps/k8s/GitOps/Flux/Flux Langly.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Templates"
+              "title": "Outline of Flux Langly"
             }
           }
         ]
@@ -164,15 +164,16 @@
   },
   "active": "c10ddfd037cc2910",
   "lastOpenFiles": [
+    "DevOps/k8s/GitOps/Flux/attachments/Pasted image 20250128112624.png",
+    "DevOps/Docker/Templates.md",
     "DevOps/Docker/Core",
-    "DevOps/k8s/GitOps/Flux/Flux.md",
+    "DevOps/k8s/GitOps/Flux/Flux Langly.md",
     "DevOps/k8s/Core",
     "DevOps/k8s/Helm",
     "DevOps/k8s/GitOps/Flux/attachments/Pasted image 20250128111010.png",
     "DevOps/k8s/GitOps/Flux/attachments/Pasted image 20250128110931.png",
     "DevOps/k8s/GitOps/Flux/attachments/Pasted image 20250128110851.png",
     "DevOps/k8s/GitOps/Flux/attachments",
-    "DevOps/Docker/Templates.md",
     "DevOps/Docker",
     "DevOps/k8s/GitOps/Flux",
     "DevOps/k8s/GitOps",
