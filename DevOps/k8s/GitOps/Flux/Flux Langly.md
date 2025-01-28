@@ -1,5 +1,5 @@
 
-# Flux working schema 
+# Flux working schema.
 
 
 ![alt text](<attachments/Pasted image 20250128110851.png>)
